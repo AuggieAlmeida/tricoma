@@ -8,6 +8,7 @@ Este repositório guarda só as versões prontas do jogo, para baixar.
 
 - [Windows (64 bits)](https://github.com/AuggieAlmeida/tricoma/releases/latest/download/Tricoma-Windows-x86_64.zip)
 - [Linux (64 bits)](https://github.com/AuggieAlmeida/tricoma/releases/latest/download/Tricoma-Linux-x86_64.zip)
+- [macOS (Intel e Apple Silicon)](https://github.com/AuggieAlmeida/tricoma/releases/latest/download/Tricoma-macOS-universal.zip)
 
 Todas as versões ficam em [Releases](https://github.com/AuggieAlmeida/tricoma/releases).
 
@@ -17,11 +18,13 @@ Todas as versões ficam em [Releases](https://github.com/AuggieAlmeida/tricoma/r
 
 **Linux:** extraia o ZIP e execute `./Tricoma.x86_64`. Se o sistema tiver tirado a permissão de execução, rode antes `chmod +x ./Tricoma.x86_64`.
 
+**macOS:** extraia o ZIP e arraste o `Tricoma.app` para a pasta Aplicativos antes de abrir. O app não é notarizado pela Apple, então na primeira vez o macOS avisa que não consegue verificá-lo: vá em Ajustes do Sistema › Privacidade e Segurança e clique em **Abrir mesmo assim**. Em versões anteriores ao macOS 15, clique com o botão direito no app e escolha **Abrir**. Isso só é preciso uma vez; as atualizações seguintes abrem direto.
+
 Não precisa instalar mais nada.
 
 ## Jogar com os amigos
 
-Na tela inicial, um jogador escolhe **Hospedar** e os outros **Entrar**, com o IP do anfitrião (da rede local ou de uma rede virtual, como Tailscale ou Radmin VPN) e a mesma porta UDP, 24567 por padrão. O firewall de quem hospeda precisa liberar UDP nessa porta. Todos na sala usam a mesma versão do jogo.
+Na tela inicial, um jogador escolhe **Hospedar** e os outros **Entrar**, com o IP do anfitrião (da rede local ou de uma rede virtual, como Tailscale ou Radmin VPN) e a mesma porta UDP, 24567 por padrão. O firewall de quem hospeda precisa liberar UDP nessa porta; no Mac, se o firewall estiver ligado, ele pergunta na primeira vez que o jogo hospeda. Todos na sala usam a mesma versão do jogo.
 
 ## Atualizações
 
